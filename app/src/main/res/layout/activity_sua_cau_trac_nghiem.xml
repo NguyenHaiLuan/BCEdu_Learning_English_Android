@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.KiemTra.SuaCauTracNghiem"
+    android:background="@drawable/appbackground">
+
+    <TextView
+        android:id="@+id/titleTKH"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fontFamily="@font/sf_semi_bold"
+        android:gravity="center"
+        android:text="Thêm câu hỏi"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/backBtn_CSTN"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/tranpr"
+        android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+    <EditText
+        android:id="@+id/cauHoi_CSTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/titleTKH"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/ic_question"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/xanhdam"
+        android:hint="Câu hỏi"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/dapAnA_CSTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cauHoi_CSTN"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_looks_one_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/xanhdam"
+        android:hint="Đáp án A"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/dapAnB_CSTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dapAnA_CSTN"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_looks_two_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/xanhdam"
+        android:hint="Đáp án B"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/dapAnC_CSTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dapAnB_CSTN"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_looks_3_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/xanhdam"
+        android:hint="Đáp án C"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/dapAnD_CSTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dapAnC_CSTN"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_looks_4_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/xanhdam"
+        android:hint="Đáp án D"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_below="@+id/dapAnD_CSTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sf_semi_bold"
+            android:text="Đáp án đúng"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/dapAnDung_Spinner_CSTN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/custom_edittext" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/edit_CSTN"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/tran_btn_solid"
+        android:text="Xong"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

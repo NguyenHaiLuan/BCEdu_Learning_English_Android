@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".Activities.KiemTra.GioiThieuBaiKiemTra">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xamnhat">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hinhBaiKiemTra_Start"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/testavt"
+                app:shapeAppearanceOverlay="@style/circle"
+                app:strokeColor="@color/xanhduong"
+                app:strokeWidth="4dp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/gaAnimation"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginBottom="-20dp"
+                app:lottie_rawRes="@raw/ga" />
+
+            <TextView
+                android:id="@+id/tenbaikiemtra_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hinhBaiKiemTra_Start"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_semi_bold"
+                android:text="Tên bài thi"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/loaiBaiThiStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tenbaikiemtra_start"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_semi_bold"
+                android:gravity="center"
+                android:text="Chào mừng bạn đến với bình nguyên vô tận!!!"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/xanhdam"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/soCauHoiStart"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/loaiBaiThiStart"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image2"
+                android:fontFamily="@font/sf_semi_bold"
+                android:gravity="center"
+                android:text="Số câu hỏi:"
+                android:textColor="@color/xanhduong"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/loaiBaiThiStart"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_spacefill"
+                app:tint="@color/xanhduong" />
+
+            <TextView
+                android:id="@+id/thoiLuongStart"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/soCauHoiStart"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image2"
+                android:fontFamily="@font/sf_semi_bold"
+                android:gravity="center"
+                android:text="Thời lượng:"
+                android:textColor="#E65555"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/image32"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/soCauHoiStart"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_timer"
+                app:tint="#E65555" />
+
+            <TextView
+                android:id="@+id/diemcaonhatStart"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/thoiLuongStart"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image2"
+                android:fontFamily="@font/sf_semi_bold"
+                android:gravity="center"
+                android:text="Điểm cao nhất:"
+                android:textColor="#C5B105"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/image352"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/thoiLuongStart"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:src="@drawable/rank"
+                app:tint="#C5B105" />
+
+            <Button
+                android:id="@+id/batDau_start"
+                android:layout_width="120dp"
+                android:layout_height="46dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/tran_btn_solid"
+                android:text="chiến"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

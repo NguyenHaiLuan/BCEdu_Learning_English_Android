@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="700dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_rank">
+
+            <TextView
+                android:id="@+id/chucMungText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chúc mừng!"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/rankframe"
+                android:textSize="26sp"
+                android:fontFamily="@font/bungee"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/anhRankDialog"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/challenger"
+                android:layout_below="@+id/chucMungText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/rankframe"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:lottie_rawRes="@raw/rank_frame"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/mucRankDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Challenger"
+                android:layout_marginTop="-10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rankframe"
+                android:textSize="24sp"
+                android:textColor="#F44336"
+                android:fontFamily="@font/sf_bold"/>
+
+            <TextView
+                android:id="@+id/tenDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alexandro Tiến"
+                android:layout_marginTop="-10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mucRankDialog"
+                android:textSize="27sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_bold"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/chapNhanBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tran_btn_solid"
+                android:textColor="@color/black"
+                android:text="Chấp nhận"
+                android:layout_below="@id/tenDialog"
+                android:layout_marginTop="20dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

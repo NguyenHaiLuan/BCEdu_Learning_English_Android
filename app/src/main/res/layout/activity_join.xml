@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LiveStream.JoinActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/createorjoinlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xamnhat"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LỚP HỌC ONLINE"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:fontFamily="@font/sf_bold" />
+
+            <Button
+                android:id="@+id/btnCreateMeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạo lớp học"
+                android:background="@drawable/tran_btn_solid"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:text="Hoặc"
+                android:fontFamily="@font/sf_semi_bold"
+                android:textColor="@color/xanhdam"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etMeetingId"
+                android:theme="@android:style/Theme.Holo"
+                android:layout_width="250dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_height="60dp"
+                android:hint="Nhập mã lớp học"
+                android:textColor="@color/xanhdam"
+                android:textColorHint="@color/xanhdam"
+                android:paddingStart="15dp"/>
+
+            <Button
+                android:id="@+id/btnJoinHostMeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Tham gia như là chủ phòng"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/tran_btn_solid"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnJoinViewerMeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tham gia với tư cách khách"
+                android:background="@drawable/tran_btn_no_solid"
+                android:textColor="@color/xanhduong"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

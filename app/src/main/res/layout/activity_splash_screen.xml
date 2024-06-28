@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SplashScreen"
+    android:background="@drawable/appbackground">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationSplash"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/catcoding" />
+
+    <TextView
+        android:id="@+id/text_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BCEDu"
+        android:textAllCaps="true"
+        android:textSize="33sp"
+        android:layout_below="@+id/animationSplash"
+        android:gravity="center"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/xanhduong" />
+
+    <TextView
+        android:id="@+id/text_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_logo"
+        android:fontFamily="@font/exo2_bold"
+        android:gravity="center"
+        android:text="Học! Học nữa! Học mãi!"
+        android:textAllCaps="true"
+        android:textSize="22sp"
+        android:textColor="@color/xanhdam"/>
+
+    <TextView
+        android:id="@+id/developText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Hải Luân"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

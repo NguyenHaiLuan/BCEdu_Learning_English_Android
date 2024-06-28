@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bn_thachdau"
+        android:icon="@drawable/challenger"
+        android:title="@string/thach_dau"
+        android:iconTint="@color/red" />
+    <item
+        android:id="@+id/bn_daicaothu"
+        android:icon="@drawable/grandmaster"
+        android:title="@string/dai_cao_thu"
+        android:iconTint="@color/xanhdam"/>
+
+    <item
+        android:id="@+id/bn_caothu"
+        android:icon="@drawable/master"
+        android:title="@string/cao_thu"
+        android:iconTint="@color/xanhduong"/>
+</menu>

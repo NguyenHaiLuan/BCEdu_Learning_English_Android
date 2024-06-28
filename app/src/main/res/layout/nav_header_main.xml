@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@drawable/bg2">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/avtNguoiDungNav"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circle"
+        app:srcCompat="@drawable/testavt"
+        app:strokeColor="@color/xamnhat"
+        app:strokeWidth="5dp"
+        android:padding="3dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/hinhRankNav"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circle"
+        app:srcCompat="@drawable/bronzer"/>
+
+    <TextView
+        android:id="@+id/tenNguoiDungNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@id/avtNguoiDungNav"
+        android:fontFamily="@font/sf_bold"
+        android:text="Alexandro Tiến"
+        android:textColor="#2196F3"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/vaiTroNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:text="Admin"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_semi_bold"
+        android:textColor="@color/red"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/avtNguoiDungNav"/>
+
+    <TextView
+        android:id="@+id/rankNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:text="Challenger"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_semi_bold"
+        android:textColor="@color/purple_700"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/avtNguoiDungNav"/>
+
+</RelativeLayout>

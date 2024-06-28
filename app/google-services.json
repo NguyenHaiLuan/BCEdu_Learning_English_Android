@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1004455021644",
+    "project_id": "bcedu-28c0f",
+    "storage_bucket": "bcedu-28c0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004455021644:android:05621fc4a15bbf72b5f8e9",
+        "android_client_info": {
+          "package_name": "com.example.bcedu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004455021644-a35mpt9b5fpo7jdarpued7ehl4codjjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bcedu",
+            "certificate_hash": "2f661be6bb789df8da153f4ee2b76af696e25ba5"
+          }
+        },
+        {
+          "client_id": "1004455021644-qj8ak843ljpmnvnous9rj11sj2br4ft3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVa1ImbAGUeGl3kHP63Y_0cwJIfc365Sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004455021644-qj8ak843ljpmnvnous9rj11sj2br4ft3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

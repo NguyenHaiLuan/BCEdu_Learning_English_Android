@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xanhnhathon">
+
+        <TextView
+            android:id="@+id/confirmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận thoát?"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/exo2_bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm của bạn sẽ không được lưu!"
+            android:gravity="center"
+            android:layout_below="@+id/confirmText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/exo2_bold"
+            android:textColor="@color/red"/>
+
+
+        
+        <LinearLayout
+            android:layout_below="@+id/textConfirm"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/huyThoatBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="huỷ"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/exo2_bold"
+                android:textColor="@color/xanhdam"
+                android:layout_margin="20dp"
+                app:strokeColor="@color/xanhdam"
+                app:strokeWidth="2dp"/>
+
+            <Button
+                android:id="@+id/confirmThoatBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thoát"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

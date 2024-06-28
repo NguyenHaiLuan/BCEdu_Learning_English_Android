@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.KhoaHoc.ChiTietKhoaHoc">
+
+    <RelativeLayout
+        android:id="@+id/khoiGioiThieuKhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/logoKhoaHoc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logoapp"
+            app:shapeAppearanceOverlay="@style/circular" />
+
+        <TextView
+            android:id="@+id/tenKhoaHoc_ChiTiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/logoKhoaHoc"
+            android:fontFamily="@font/exo2_bold"
+            android:text="Tên khoá học"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/giangVienKhoaHoc_ChiTiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tenKhoaHoc_ChiTiet"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/logoKhoaHoc"
+            android:fontFamily="@font/exo2"
+            android:text="Giảng viên: Nguyễn Hải Luân"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/khoiNutLenh_ChiTietKhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/khoiGioiThieuKhoaHoc"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_CTKH"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/tranpr"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/thamGiaBTN_CTKH"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/tran_btn_solid"
+            android:text="Tham gia"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/khoiMoTaKhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/khoiNutLenh_ChiTietKhoaHoc"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/botronanh">
+
+        <TextView
+            android:id="@+id/moTa_KhoaHoc_ChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo2"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:text="Mô tả chi tiết khoá học"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textHocVien_ChiTietHocVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/khoiMoTaKhoaHoc"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:fontFamily="@font/exo2_bold"
+        android:padding="5dp"
+        android:text="Danh sách học viên"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/listView_HocVien_ThamGia_KhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textHocVien_ChiTietHocVien" />
+
+
+</RelativeLayout>

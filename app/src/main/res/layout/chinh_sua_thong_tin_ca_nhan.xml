@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NguoiDung.ChinhSuaThongTinCaNhan">
+
+    <TextView
+        android:id="@+id/txtEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey"
+        android:fontFamily="@font/sf_semi_bold"
+        android:gravity="center"
+        android:text="Chỉnh sửa"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/avtEdit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circle"
+        app:srcCompat="@drawable/supermanavt" />
+
+
+
+    <ImageButton
+        android:id="@+id/backBtnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/tranpr"
+        android:padding="10dp"
+        android:src="@drawable/baseline_arrow_back_ios_24" />
+
+
+    <TextView
+        android:id="@+id/txtEditPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avtEdit"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_semi_bold"
+        android:gravity="center"
+        android:text="Thay ảnh"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/khoiEditPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_below="@id/txtEditPhoto">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/sf_semi_bold"
+            android:text="Hình ảnh mới của bạn"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/avtEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/custom_edittext"
+            android:fontFamily="@font/sf_regular"
+            android:enabled="false"
+            android:hint="Hình ảnh của bạn"
+            android:paddingLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroleViewEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editBtnEdit"
+        android:layout_below="@id/khoiEditPhoto"
+        android:layout_marginBottom="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/sf_semi_bold"
+                    android:text="Name"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/sf_regular"
+                    android:hint="Tên của bạn là..."
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/sf_semi_bold"
+                    android:text="Email"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/sf_regular"
+                    android:hint="Email của bạn là..."
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/sf_semi_bold"
+                    android:text="Số điện thoại"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/sdtEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/sf_regular"
+                    android:hint="Số điện thoại của bạn là..."
+                    android:inputType="phone"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/sf_semi_bold"
+                    android:text="Ngày sinh"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="5dp">
+
+                    <ImageView
+                        android:id="@+id/pickDate"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/baseline_edit_calendar_24"
+                        android:background="@drawable/tran_btn_no_solid"
+                        android:layout_gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/ngaySinhCSTTCT"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/custom_edittext"
+                        android:fontFamily="@font/sf_regular"
+                        android:hint="Ngày sinh của bạn"
+                        android:enabled="false"
+                        android:paddingLeft="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/sf_semi_bold"
+                    android:text="Giới tính"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/gioiTinhSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/custom_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/editBtnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/xanhnhathon"
+        android:text="Xác nhận"
+        android:textAllCaps="true"
+        android:textColor="@color/xanhdam" />
+
+
+</RelativeLayout>

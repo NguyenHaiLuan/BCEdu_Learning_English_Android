@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tranpr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.3"
+                android:src="@drawable/bgkhoa"
+                app:tint="#77000000" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/bgkhoa" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/hinh_bai_trac_nghiem"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:src="@drawable/mortarboard"
+            app:shapeAppearanceOverlay="@style/circle"
+            app:strokeColor="@color/xanhdam"
+            app:strokeWidth="2dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"/>
+
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.3"
+                android:src="@drawable/bgright"
+                app:tint="#77000000" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/bgright" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:src="@drawable/right"
+                app:tint="#F75F71" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tenBaiTracNghiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/hinh_bai_trac_nghiem"
+            android:fontFamily="@font/sf_bold"
+            android:text="Trắc nghiệm 1 "
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/soluongCau_TN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tenBaiTracNghiem"
+            android:layout_toRightOf="@+id/hinh_bai_trac_nghiem"
+            android:text="Số lượng từ vựng: 69"
+            android:textColor="#676565"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/sf_regular"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/diemCuaToi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/soluongCau_TN"
+            android:layout_toRightOf="@+id/hinh_bai_trac_nghiem"
+            android:text="Điểm cao nhất: 69"
+            android:textColor="#676565"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/sf_regular"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

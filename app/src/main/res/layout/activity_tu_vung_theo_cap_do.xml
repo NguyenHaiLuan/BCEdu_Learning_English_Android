@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".Activities.TuVung.TuVungTheoCapDo">
+
+        <ImageButton
+            android:id="@+id/backTVTCD_Btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/tranpr"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/kiemTraTuVungTheoCapDo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tranpr"
+            android:src="@drawable/baseline_star_24"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kiemTraTuVungTheoCapDo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Level"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_TuVung"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layoutAnimation="@anim/layout_anim_slide_from_bottom"
+        android:padding="5dp"
+        android:layout_below="@+id/textViewLevel"/>
+</RelativeLayout>

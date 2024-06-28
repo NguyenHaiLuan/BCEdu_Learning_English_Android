@@ -1,0 +1,147 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BCEdu" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
+        <!-- Customize your dialog theme here. -->
+    </style>
+
+    <style name="Theme.BCEdu" parent="Base.Theme.BCEdu" />
+    
+    <style name="success_toast">
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/exo2_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">@color/xanhnhat</item>
+        <item name="stIconStart">@drawable/baseline_check_circle_outline_24</item>
+        <item name="stRadius">10dp</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="error_toast">
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/exo2_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#FF5E65</item>
+        <item name="stIconStart">@drawable/baseline_error_outline_24</item>
+        <item name="stRadius">10dp</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="warning">
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/exo2_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#CCAC40</item>
+        <item name="stIconStart">@drawable/baseline_miscellaneous_services_24</item>
+        <item name="stRadius">10dp</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="thongBaoDiem">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#94E5F3</item>
+        <item name="stFont">@font/exo2_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#53565A</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#94E5F3</item>
+        <item name="stIconStart">@drawable/rank</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stGravity">top</item> top or center
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="chinhXacToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#94E5F3</item>
+        <item name="stFont">@font/exo2_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#53565A</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#94E5F3</item>
+        <item name="stIconStart">@drawable/baseline_star_24</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stGravity">top</item> top or center
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="saiToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#FF5E65</item>
+        <item name="stFont">@font/exo2_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#53565A</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#FF5E65</item>
+        <item name="stIconStart">@drawable/baseline_clear_24</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stGravity">top</item> top or center
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="micOnToast">
+        <item name="stTextColor">#94E5F3</item>
+        <item name="stFont">@font/sf_semi_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#53565A</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#94E5F3</item>
+        <item name="stIconEnd">@drawable/baseline_mic_24</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="micOffToast">
+        <item name="stTextColor">#94E5F3</item>
+        <item name="stFont">@font/sf_semi_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#53565A</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#94E5F3</item>
+        <item name="stIconEnd">@drawable/baseline_mic_off_24</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="camOnToast">
+        <item name="stTextColor">#94E5F3</item>
+        <item name="stFont">@font/sf_semi_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#53565A</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#94E5F3</item>
+        <item name="stIconEnd">@drawable/baseline_videocam_24</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="camOffToast">
+        <item name="stTextColor">#94E5F3</item>
+        <item name="stFont">@font/sf_semi_bold</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#53565A</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#94E5F3</item>
+        <item name="stIconEnd">@drawable/baseline_videocam_off_24</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="circular">
+        <item name="cornerSize">30%</item>
+    </style>
+
+    <style name="circle">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

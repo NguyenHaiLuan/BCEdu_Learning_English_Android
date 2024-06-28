@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.KiemTra.LobbyKiemTra"
+    android:background="@color/xanhnhathon">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewThongTinKhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/xanhduong">
+
+                    <ImageButton
+                        android:id="@+id/backLBKT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/tran_btn_no_solid"
+                        android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+                    <TextView
+                        android:id="@+id/tenGV_LBKT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/backLBKT"
+                        android:fontFamily="@font/sf_semi_bold"
+                        android:layout_centerVertical="true"
+                        android:text="Nguyễn Thị Phúc Trường"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_toLeftOf="@+id/hinhAo"/>
+
+                    <ImageView
+                        android:id="@+id/hinhAo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/xamnhat">
+
+                    <TextView
+                        android:id="@+id/tenKhoaHoc_LBKT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:fontFamily="@font/sf_bold"
+                        android:layout_centerVertical="true"
+                        android:text="Khoá học của ben"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_toLeftOf="@+id/hinhAo2"/>
+
+                    <TextView
+                        android:id="@+id/hinhAo2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:text="Kiểm tra"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sf_bold"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hinhKhoaHoc_LBKT"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/circle"
+                app:srcCompat="@drawable/supermanavt"
+                app:strokeColor="@color/xamnhat"
+                app:strokeWidth="4dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardViewThongTinKhoaHoc"
+        android:layout_margin="10dp"
+        android:layout_above="@id/khoiNutLenh_ThemBaiKiemTra"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xamnhat">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/baiKiemTra_LBKT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"/>
+
+
+            <ImageView
+                android:id="@+id/nodata_images_LBKT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nodata_images"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/khoiNutLenh_ThemBaiKiemTra"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xamnhat"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/themBaiKiemTra"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:padding="12dp"
+                android:background="@drawable/tran_btn_no_solid"
+                android:src="@drawable/baseline_assignment_add_24"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

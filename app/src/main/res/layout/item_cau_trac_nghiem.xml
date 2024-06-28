@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/appbackground">
+
+        <!-- Câu hỏi -->
+        <TextView
+            android:id="@+id/textCauhoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/sf_bold"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Câu hỏi"/>
+
+        <!-- Đáp án A -->
+        <TextView
+            android:id="@+id/txtDapAnA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="@android:color/black"
+            android:text="Đáp án A"/>
+
+        <!-- Đáp án B -->
+        <TextView
+            android:id="@+id/txtDapAnB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="@android:color/black"
+            android:text="Đáp án B"/>
+
+        <!-- Đáp án C -->
+        <TextView
+            android:id="@+id/txtDapAnC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="@android:color/black"
+            android:text="Đáp án C"/>
+
+        <!-- Đáp án D -->
+        <TextView
+            android:id="@+id/txtDapAnD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="@android:color/black"
+            android:text="Đáp án D"/>
+
+        <!-- Đáp án đúng -->
+        <TextView
+            android:id="@+id/txtDapAnDung"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/sf_semi_bold"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="Đáp án đúng: A"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageButton
+                android:id="@+id/editTn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_edit_24"
+                android:background="@drawable/tranpr"/>
+
+            <ImageButton
+                android:id="@+id/xoaTn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_delete_24"
+                android:background="@drawable/tranpr"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+

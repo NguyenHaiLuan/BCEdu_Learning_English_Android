@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BCEdu"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.QuanLyNguoiDung"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.Admin_ThemTuVung"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.Admin_SuaTuVung"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.Admin_TuVungTheoCapDo"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.Admin_CapDoTuVung"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LiveStream.MeetingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LiveStream.JoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KiemTra.SuaCauTracNghiem"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KiemTra.ThemCauTracNghiem"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KiemTra.QuanLyBKT_TracNghiem"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KiemTra.KiemTraTracNghiem"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KiemTra.ChinhSuaBaiKiemTra"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KiemTra.ThemBaiKiemTra"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KiemTra.GioiThieuBaiKiemTra"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KhoaHoc.QuanLyKhoaHocDaThamGia"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KhoaHoc.ChinhSuaKhoaHoc"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KhoaHoc.ThemKhoaHoc"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KhoaHoc.QuanLyKhoaHoc"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KhoaHoc.TrangChuKhoaHoc"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.XepHangAll"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NguoiDung.ChiTietSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NguoiDung.ChinhSuaThongTinCaNhan"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NguoiDung.ThongTinCaNhan"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KhoaHoc.ChiTietKhoaHoc"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TuVung.OnTapTuVung"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.AdminMain"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NguoiDung.QuenMatKhau"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NguoiDung.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NguoiDung.SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KiemTra.LobbyKiemTra"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TuVung.ChiTietTuVung"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KhoaHoc.LobbyKhoaHoc"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TuVung.TuVungTheoCapDo"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TuVung.CapDoTuVung"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KhoaHoc.KhoaHocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.firebase.auth.DEFAULT_WEB_CLIENT_ID"
+            android:value="@string/default_web_client_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".Service.MusicService"
+            android:exported="false" />
+    </application>
+
+</manifest>

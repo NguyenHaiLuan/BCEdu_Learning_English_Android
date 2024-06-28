@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Admin.Admin_ThemTuVung"
+    android:background="@drawable/appbackground">
+
+    <TextView
+        android:id="@+id/titleTKH"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fontFamily="@font/sf_semi_bold"
+        android:gravity="center"
+        android:text="Thêm từ vựng (Admin)"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/backBtn_themTV_ADMIN"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/tranpr"
+        android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/pickAnhtuvung_themTV_ADMIN"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/titleTKH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_photo_camera_black_48dp"
+        app:tint="@color/xanhdam"
+        app:shapeAppearanceOverlay="@style/circular" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/themTuVung_admin_them"
+        android:layout_below="@+id/pickAnhtuvung_themTV_ADMIN"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/linkanh_admin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_photo_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/xanhdam"
+                android:enabled="false"
+                android:hint="Link ảnh từ vựng"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tentuvung_admin"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/linkanh_admin"
+                android:layout_marginTop="20dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_vocabulary"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/xanhdam"
+                android:hint="Từ vựng"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/loaituvung_admin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tentuvung_admin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_star_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/xanhdam"
+                android:hint="Loại từ vựng"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nghia_admin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/loaituvung_admin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_loop_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/xanhdam"
+                android:hint="Ý nghĩa"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/phatam_admin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/nghia_admin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_alternate_email_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/xanhdam"
+                android:hint="Phát âm"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/viduminhhoa_admin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/phatam_admin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_lightbulb_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/xanhdam"
+                android:hint="Ví dụ minh hoạ"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/audio_admin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viduminhhoa_admin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_volume_up_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/xanhdam"
+                android:hint="Link audio"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/themTuVung_admin_them"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/tran_btn_solid"
+        android:text="THÊM"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

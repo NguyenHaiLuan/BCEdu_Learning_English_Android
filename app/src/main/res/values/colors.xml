@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="red">#FF0000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="xanhdam">#00AE72</color>
+    <color name="xanhnhat">#67BF7F</color>
+    <color name="xanhnhathon">#C9E4D6</color>
+    <color name="light_grey">#E8E8E8</color>
+    <color name="xanhduong">#2196F3</color>
+    <color name="vang">#FFEB3B</color>
+    <color name="xamnhat">#F3F5FA</color>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.KhoaHoc.QuanLyKhoaHocDaThamGia">
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGioiThieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/khoiAVT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F3F5FA">
+
+            <TextView
+                android:id="@+id/textXinchao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/sf_semi_bold"
+                android:text="Hi,"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/vaiTro_QLKH_DTG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/sf_semi_bold"
+                android:text="Admin"
+                android:layout_marginTop="29dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tenGiangVien_QLKH_DTG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_toLeftOf="@+id/hinhRankNguoiDung_QLKH_DTG"
+                android:layout_toRightOf="@+id/textXinchao"
+                android:fontFamily="@font/sf_bold"
+                android:text="Hải Luân!"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hinhNguoiDung_QLKH_DTG"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:srcCompat="@drawable/supermanavt"
+                app:strokeWidth="3dp"
+                app:strokeColor="@color/lavender"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hinhRankNguoiDung_QLKH_DTG"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="83dp"
+                android:layout_marginTop="70dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:srcCompat="@drawable/challenger"/>
+        </RelativeLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_QLKH_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardViewGioiThieu"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_semi_bold"
+        android:text="Khoá học của tôi"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/back_DTG"
+        android:layout_below="@+id/text_QLKH_1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_KH_DTG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xanhnhathon"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:id="@+id/nodata_images_DTG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nodata_images"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/back_DTG"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:padding="9dp"
+        android:background="@drawable/tran_btn_no_solid"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+</RelativeLayout>

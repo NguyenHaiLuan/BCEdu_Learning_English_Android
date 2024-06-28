@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_main"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/rankcustomer"
+            android:title="@string/action_admin" />
+
+    </group>
+    <item android:title="Học Tập">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_hocTuVung"
+                    android:icon="@drawable/ic_vocabulary"
+                    android:title="Học Từ Vựng" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Khoá học">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_khoaHoc"
+                    android:icon="@drawable/ic_spacefill"
+                    android:iconTint="@color/black"
+                    android:title="Tất cả khoá học"></item>
+                <item
+                    android:id="@+id/nav_khoaHocCuaToi"
+                    android:icon="@drawable/baseline_star_border_24"
+                    android:title="Của tôi"
+                    android:iconTint="@color/black">
+                </item>
+                <item
+                    android:id="@+id/nav_khoaHocDaTao"
+                    android:icon="@drawable/baseline_miscellaneous_services_24"
+                    android:iconTint="@color/black"
+                    android:title="Đã tạo"></item>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Tài Khoản">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_thongTinTaiKhoan"
+                    android:icon="@drawable/ic_person"
+                    android:title="Thông Tin Tài Khoản"></item>
+                <item
+                    android:id="@+id/nav_xepHang"
+                    android:icon="@drawable/rank"
+                    android:title="Bảng Xếp Hạng"></item>
+
+                <item
+                    android:id="@+id/nav_caidat"
+                    android:icon="@drawable/baseline_settings_applications_24"
+                    android:title="Cài đặt"></item>
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Đăng xuất"></item>
+            </group>
+        </menu>
+    </item>
+
+</menu>

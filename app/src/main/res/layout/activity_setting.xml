@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Setting"
+    android:background="@drawable/appbackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_bold"
+        android:gravity="center"
+        android:text="Cài đặt"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/backSetting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/tran_btn_no_solid"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/ts"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Âm thanh"
+        android:textSize="20sp"
+        android:fontFamily="@font/sf_semi_bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"/>
+
+    <Switch
+        android:id="@+id/soundSwitch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:checked="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@+id/ts"
+        android:gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xanhnhathon"
+    tools:context="Fragment.ViewerFragment">
+
+    <LinearLayout
+        android:id="@+id/meetingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12sp"
+        android:paddingVertical="5sp">
+
+        <TextView
+            android:id="@+id/meetingId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Id lớp học: "
+            android:fontFamily="@font/sf_semi_bold"
+            android:textColor="@color/xanhdam"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tran_btn_solid"
+            android:textColor="@color/black"
+            android:text="Rời lớp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/waitingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Đợi chủ phòng thêm 1 chút \n để bắt đầu lớp học"
+        android:textColor="@color/xanhdam"
+        android:textFontWeight="700"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:resize_mode="fixed_width"
+        app:show_buffering="when_playing"
+        app:show_subtitle_button="false"
+        app:use_artwork="false"
+        app:show_next_button="false"
+        app:show_previous_button="false"
+        app:use_controller="true"
+        android:layout_below="@id/meetingLayout"/>
+
+</RelativeLayout>
