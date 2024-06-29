@@ -104,6 +104,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="30dp"
+                android:padding="2dp"
                 android:scaleType="centerCrop"
                 app:shapeAppearanceOverlay="@style/circle"
                 app:srcCompat="@drawable/supermanavt"
