@@ -61,7 +61,7 @@ public class GrandMasterFragment extends Fragment {
     }
 
     private void loadUsers() {
-        compositeDisposable.add(apiHocTap.getNguoiDungTheoMaXepHang(9)
+        compositeDisposable.add(apiHocTap.getNguoiDungTheoMaXepHang(10)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(

@@ -60,7 +60,7 @@ public class MasterFragment extends Fragment {
     }
 
     private void loadUsers() {
-        compositeDisposable.add(apiHocTap.getNguoiDungTheoMaXepHang(8)
+        compositeDisposable.add(apiHocTap.getNguoiDungTheoMaXepHang(9)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(

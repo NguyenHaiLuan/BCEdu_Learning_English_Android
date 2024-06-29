@@ -64,7 +64,7 @@ public class ChallengerFragment extends Fragment {
     }
 
     private void loadUsers() {
-        compositeDisposable.add(apiHocTap.getNguoiDungTheoMaXepHang(10)
+        compositeDisposable.add(apiHocTap.getNguoiDungTheoMaXepHang(11)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
