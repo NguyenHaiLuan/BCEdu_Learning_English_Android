@@ -3,6 +3,7 @@ package com.example.bcedu.Activities.LiveStream;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
+import com.example.bcedu.Activities.KhoaHoc.LobbyKhoaHoc;
+import com.example.bcedu.Activities.KiemTra.LobbyKiemTra;
 import com.example.bcedu.R;
 import com.example.bcedu.Service.MusicService;
 
@@ -57,6 +60,7 @@ public class JoinActivity extends AppCompatActivity {
         final Button btnJoinHost = findViewById(R.id.btnJoinHostMeeting);
         final Button btnJoinViewer = findViewById(R.id.btnJoinViewerMeeting);
         final EditText etMeetingId = findViewById(R.id.etMeetingId);
+        final Button back = findViewById(R.id.backTC);
 
         // create meeting and join as Host
         btnCreate.setOnClickListener(v -> createMeeting(sampleToken));
@@ -78,6 +82,16 @@ public class JoinActivity extends AppCompatActivity {
             intent.putExtra("mode", "VIEWER");
             startActivity(intent);
         });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LobbyKhoaHoc.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
     private void createMeeting(String token) {

@@ -80,6 +80,15 @@
                 android:background="@drawable/tran_btn_no_solid"
                 android:textColor="@color/xanhduong"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/backTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trở lại"
+                android:background="@drawable/tran_btn_solid"
+                android:textColor="@color/red"
+                android:textAllCaps="false" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
